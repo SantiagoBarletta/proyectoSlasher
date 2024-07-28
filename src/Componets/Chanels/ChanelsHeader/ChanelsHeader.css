@@ -1,0 +1,81 @@
+.chanels-header{
+    background-color: #4a154b;
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    
+    justify-content: space-between; 
+    font-family: 'Lato', sans-serif;
+    
+}
+
+.chanels-header .logo{
+    width: 400px;
+    margin-right: 10px;
+    margin-left: 20px;
+}
+
+.chanels-header .logo img{
+    width: 120px
+}
+
+.chanels-header .iconos{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    margin-right: 10px;
+    gap : 10px;
+    
+}
+
+.chanels-header .ayuda{
+    display: flex;
+    align-items: center;
+    color: white;
+    font-size: 25px;
+    font-weight: bold;
+    margin-right: 50px;
+    gap : 10px;
+    width: 300px;
+    justify-content: flex-end;
+    
+}
+
+.chanels-header input{
+    background-color: #6D4E72;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 10px;
+    width: 60vw;
+    flex: 1;
+    
+}
+
+@media screen and (max-width: 768px) {
+    .chanels-header .iconos{
+        display: none;
+    }
+    .chanels-header .ayuda{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .chanels-header{
+        flex-direction: column;
+    }
+
+    .chanels-header .logo{
+        margin-bottom: 5px;
+        justify-content: center;
+        display: flex;
+        width: 100%;
+    }
+
+    
+}
