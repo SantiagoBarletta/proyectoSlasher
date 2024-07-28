@@ -27,4 +27,8 @@ Para instalar y ejecutar el proyecto localmente, sigue estos pasos:
 1. **Clona el Repositorio**
 
    ```bash
-   git clone https://github.com/tu-usuario/tu-repositorio.git
+   git clone https://github.com/SantiagoBarletta/proyectoSlasher
+
+## Contácto
+
+- **Correo electrónico**: santiagobarletta@outlook.com
