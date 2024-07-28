@@ -34,6 +34,10 @@
     padding: 20px;
 }
 
+.chanels-aside .members .member{
+    cursor: pointer;
+}
+
 .chanels-aside .members .link{
     text-decoration: none;
     color: #fff;
@@ -42,8 +46,8 @@
     margin: 10px 0;
     display: flex;
     align-items: center;
-    gap: 5px
-
+    gap: 5px;
+    cursor: pointer;
 }
 
 .chanels-aside .members .link img{
