@@ -6,7 +6,7 @@ function ChanelsScreens() {
   const [search, setSearch] = useState('');
   const [selectedUser, setSelectedUser] = useState(null);
   const [viewInfo, setViewInfo] = useState('');
-  const [isAsideVisible, setIsAsideVisible] = useState(window.innerWidth > 360);
+  const [isAsideVisible, setIsAsideVisible] = useState(window.innerWidth > 420);
 
   const toggleAside = () => {
     setIsAsideVisible(prevState => !prevState);
@@ -18,7 +18,7 @@ function ChanelsScreens() {
 
   useEffect(() => {
     const handleResize = () => {
-      if (window.innerWidth > 360) {
+      if (window.innerWidth > 420) {
         setIsAsideVisible(true);
       } else if (!isAsideVisible) {
         setIsAsideVisible(false);
