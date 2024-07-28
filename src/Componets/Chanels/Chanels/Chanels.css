@@ -96,7 +96,6 @@
 
 @media screen and (max-width: 768px) {
     .channel{
-        border-top-left-radius: 10px;
         width: 99vw;
         margin: 0;
     }
