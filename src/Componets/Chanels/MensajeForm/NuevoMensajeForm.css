@@ -17,6 +17,7 @@
   color: #fff;
   margin-bottom: 10px;
   outline: none; 
+  resize: none;
 }
 
 .input-new-message:focus,
@@ -24,7 +25,9 @@
   background-color: #222529; 
   color: #fff; 
   outline: none;
+  
 }
+
 
 .button-new-message {
   background-color: #222529;
