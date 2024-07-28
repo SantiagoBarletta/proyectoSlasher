@@ -2,7 +2,7 @@ import React from 'react';
 import { ChanelsScreen,  NewWorkspaceScreen, WorkspacesScreen } from './Screens';
 import { Routes, Route } from 'react-router-dom';
 import UserInfo from './Componets/Users/UserInfo';
-import { NewChannel } from './Componets';
+import { NewChannel, Help } from './Componets';
 
 
 
@@ -16,6 +16,7 @@ function App() {
         <Route path="/workspaces/new" element={<NewWorkspaceScreen />} />
         <Route path="/workspaces/:workspaceID/user/:userID" element={<UserInfo />} />
         <Route path="/workspaces/:workspaceID/new-channel" element={<NewChannel />} />
+        <Route path='/help' element={<Help />} />
       </Routes>
  
   )

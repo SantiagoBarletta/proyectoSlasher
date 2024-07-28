@@ -1,0 +1,52 @@
+// src/Chanels/Help/Help.jsx
+import React from 'react';
+import { useNavigate } from 'react-router-dom';
+import './Help.css';
+
+const Help = () => {
+  const navigate = useNavigate();
+
+  const handleClose = () => {
+    navigate(-1); 
+  };
+
+  return (
+    <div className='help'>
+      <p onClick={handleClose} className='close'>Cerrar</p>
+      <h1>Proyecto de Mensajería Similar a Slack
+        </h1>
+      <p>Este proyecto es una aplicación de mensajería similar a Slack, desarrollada con React. La aplicación permite a los usuarios crear diferentes espacios de trabajo (workspaces) y canales dentro de los mismos. Los usuarios pueden interactuar con los canales, enviar mensajes y ver la información de contacto de los participantes.</p>
+
+      <h2>Características</h2>
+      <ul>
+        <li><strong>Espacios de Trabajo (Workspaces)</strong>: Los usuarios pueden crear múltiples espacios de trabajo. Cada espacio de trabajo es un contenedor para los diferentes canales y mensajes.</li>
+        <li><strong>Canales</strong>: Dentro de cada espacio de trabajo, los usuarios pueden crear canales. Los canales permiten el envío de mensajes.</li>
+        <li><strong>Mensajes</strong>: Los usuarios pueden enviar mensajes en cada canal. Los mensajes se muestran en tiempo real y se pueden eliminar.</li>
+        <li><strong>Información de Contacto</strong>: Los usuarios pueden ver la información detallada de cada contacto dentro de un canal. Esto incluye detalles como el nombre, la foto de perfil y correo electrónico.</li>
+      </ul>
+
+      <h2>Tecnologías Utilizadas</h2>
+      <ul>
+        <li><strong>React</strong></li>
+        <li><strong>React Router</strong></li>
+        <li><strong>React Icons</strong></li>
+        <li><strong>JavaScript</strong></li>
+        <li><strong>CSS</strong></li>
+      </ul>
+
+      <h2>Instalación y Configuración</h2>
+      <p>Para instalar y ejecutar el proyecto localmente, sigue estos pasos:</p>
+      <ol>
+        <li><strong>Clona el Repositorio</strong></li>
+      </ol>
+      <pre><code>git clone https://github.com/SantiagoBarletta/proyectoSlasher</code></pre>
+
+      <h2>Contacto</h2>
+      <ul>
+        <li><strong>Correo electrónico</strong>: <a href="mailto:santiagobarletta@outlook.com">santiagobarletta@outlook.com</a></li>
+      </ul>
+    </div>
+  );
+};
+
+export default Help;
