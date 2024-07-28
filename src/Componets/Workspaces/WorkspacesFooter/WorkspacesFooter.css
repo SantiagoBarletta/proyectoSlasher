@@ -42,7 +42,7 @@
     }
   }
 
-  @media screen and (max-width: 320px) {
+  @media screen and (max-width: 360px) {
     .workspaces-footer{
         max-width: 90%;
         font-size: 14px;

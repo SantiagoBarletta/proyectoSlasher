@@ -3,8 +3,9 @@ import { useParams, Link } from 'react-router-dom';
 import "./ChanelsAside.css";
 import { IoIosArrowDown } from "react-icons/io";
 import { TiArrowSortedDown } from "react-icons/ti";
+import { FaTimes } from 'react-icons/fa'
 
-const ChanelsAside = ({ onSelectUser, viewInfo, setViewInfo }) => {
+const ChanelsAside = ({ onSelectUser, viewInfo, setViewInfo, onClose  }) => {
   const { workspaceID, channelID } = useParams();
   const [workspace, setWorkspace] = useState(null);
   const [channels, setChannels] = useState([]);
@@ -28,7 +29,10 @@ const ChanelsAside = ({ onSelectUser, viewInfo, setViewInfo }) => {
 
   return (
     <div className="chanels-aside">
-      <h2>{workspaceName} <IoIosArrowDown className='arrow'/></h2>
+      <h2>{workspaceName} <IoIosArrowDown className='arrow'  /><button className="close-button" onClick={onClose}>
+        <FaTimes />
+      </button></h2>
+      
       
       <div className="channels">
         <h3><TiArrowSortedDown className='arrow'/>Canales</h3>

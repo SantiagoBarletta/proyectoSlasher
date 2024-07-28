@@ -4,10 +4,12 @@
     align-items: center;
     height: 100vh;
     font-family: 'Roboto', sans-serif;
+    background-color: #4a154b;
 }
 
 .new-channel-container{
     display: flex;
+    background-color: #fff;
     flex-direction: column;
     width: 700px;    
     --saf-0: rgba(var(--sk_foreground_low_solid,221,221,221),1);

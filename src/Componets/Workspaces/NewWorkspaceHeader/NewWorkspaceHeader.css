@@ -84,7 +84,7 @@
  }
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .workspaces-header h2 span{
     display: none;
   }

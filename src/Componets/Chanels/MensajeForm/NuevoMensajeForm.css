@@ -39,7 +39,7 @@
   right: 10px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 360px) {
   .new-message-form {
     margin: 10px;
     flex-direction: row;
