@@ -64,6 +64,7 @@ function NewWorkspace() {
             onChange={(e) => setName(e.target.value)}
             required
             placeholder='P.Ej.: Monstruos Alienigenas'
+            maxLength="20"
           />
         </div>
         <div>
@@ -73,6 +74,7 @@ function NewWorkspace() {
             value={channelName}
             onChange={(e) => setChannelName(e.target.value)}
             required
+            maxLength="20"
           />
         </div>
         <div className='botones'>

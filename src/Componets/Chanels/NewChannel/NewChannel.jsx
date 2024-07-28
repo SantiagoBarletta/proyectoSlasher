@@ -59,6 +59,7 @@ const NewChannel = () => {
             onChange={(e) => setChannelName(e.target.value)}
             required
             placeholder='P.Ej.: General'
+            maxLength="20"
           />
         </div>
         <p className='ayuda'>Los canales son el lugar donde se producen las conversaciones sobre un tema.
