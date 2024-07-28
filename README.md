@@ -4,13 +4,19 @@ Este proyecto es una aplicación de mensajería similar a Slack, desarrollada co
 
 ## Características
 
-- **Espacios de Trabajo (Workspaces)**: Los usuarios pueden crear múltiples espacios de trabajo. Cada espacio de trabajo es un contenedor para los diferentes canales y mensajes.
+- **Espacios de Trabajo (Workspaces)**: 
+    Listado de Espacios de trabajo, muestra la cantidad de usuarios y miniaturas de sus fotos de perfil.
+    Los usuarios pueden crear múltiples espacios de trabajo. Cada espacio de trabajo es un contenedor para los diferentes canales y mensajes.
 
-- **Canales**: Dentro de cada espacio de trabajo, los usuarios pueden crear canales. Los canales permiten el enevío de mensajes.
+- **Canales**: 
+    Desde el header se puede navegar hacia tras y hacia adelante. Buscar y resaltar mensajes. Tambien desde ayuda (?) se puede acceder al contenido del archivo "Readme".
+    Dentro de cada espacio de trabajo, los usuarios pueden navegar por los distintos canales y crear canales nuevos. Los canales permiten el enevío de mensajes. 
 
-- **Mensajes**: Los usuarios pueden enviar mensajes en cada canal. Los mensajes se muestran en tiempo real y se pueden eliminar.
+- **Mensajes**: 
+    Los usuarios pueden enviar mensajes en cada canal. Los mensajes se muestran en tiempo real y se pueden eliminar.
 
-- **Información de Contacto**: Los usuarios pueden ver la información detallada de cada contacto dentro de un canal. Esto incluye detalles como el nombre, la foto de perfil y correo electrónico.
+- **Información de Contacto**:
+    Los usuarios pueden ver la información detallada de cada contacto dentro de un canal. Esto incluye detalles como el nombre, la foto de perfil y correo electrónico.
 
 ## Tecnologías Utilizadas
 

@@ -19,8 +19,10 @@ const Help = () => {
 
       <h2>Características</h2>
       <ul>
-        <li><strong>Espacios de Trabajo (Workspaces)</strong>: Los usuarios pueden crear múltiples espacios de trabajo. Cada espacio de trabajo es un contenedor para los diferentes canales y mensajes.</li>
-        <li><strong>Canales</strong>: Dentro de cada espacio de trabajo, los usuarios pueden crear canales. Los canales permiten el envío de mensajes.</li>
+        <li><strong>Espacios de Trabajo (Workspaces)</strong>:     Listado de Espacios de trabajo, muestra la cantidad de usuarios y miniaturas de sus fotos de perfil.
+        Los usuarios pueden crear múltiples espacios de trabajo. Cada espacio de trabajo es un contenedor para los diferentes canales y mensajes.</li>
+        <li><strong>Canales</strong>:     Desde el header se puede navegar hacia tras y hacia adelante. Buscar y resaltar mensajes. Tambien desde ayuda (?) se puede acceder al contenido del archivo "Readme".
+        Dentro de cada espacio de trabajo, los usuarios pueden navegar por los distintos canales y crear canales nuevos. Los canales permiten el enevío de mensajes. </li>
         <li><strong>Mensajes</strong>: Los usuarios pueden enviar mensajes en cada canal. Los mensajes se muestran en tiempo real y se pueden eliminar.</li>
         <li><strong>Información de Contacto</strong>: Los usuarios pueden ver la información detallada de cada contacto dentro de un canal. Esto incluye detalles como el nombre, la foto de perfil y correo electrónico.</li>
       </ul>
