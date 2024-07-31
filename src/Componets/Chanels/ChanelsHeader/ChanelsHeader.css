@@ -36,9 +36,8 @@
     color: white;
     font-size: 25px;
     font-weight: bold;
-    margin-right: 50px;
+    margin: 0 10px;
     gap : 10px;
-    width: 300px;
     justify-content: flex-end;
     
 }
@@ -69,7 +68,7 @@
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 768px) {
     .chanels-header{
         flex-direction: column;
     }
@@ -103,4 +102,8 @@
         cursor: pointer;
         color: #fff;
       }
+      .chanels-header input{
+        width: 90vw;
+        
+    }
 }
