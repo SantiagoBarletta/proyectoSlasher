@@ -12,10 +12,8 @@ function NewWorkspace() {
     if (name && channelName) {
       const storedWorkspaces = JSON.parse(localStorage.getItem('workspaces')) || [];
       
-      // Generar ID para el nuevo workspace
       const newWorkspaceId = `W00${storedWorkspaces.length ? parseInt(storedWorkspaces[storedWorkspaces.length - 1].id.substring(3)) + 1 : 1}`;
       
-      // Generar ID correlativo para el nuevo canal
       let highestChannelIdNumber = 0;
       storedWorkspaces.forEach(workspace => {
         workspace.channels.forEach(channel => {
@@ -27,7 +25,6 @@ function NewWorkspace() {
       });
       const newChannelId = `C00${highestChannelIdNumber + 1}`;
 
-      // Crear el nuevo workspace con el nuevo canal
       const newWorkspace = {
         id: newWorkspaceId,
         name: name,

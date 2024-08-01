@@ -4,10 +4,10 @@ import { useNavigate } from 'react-router-dom';
 import './Help.css';
 
 const Help = () => {
-  const navigate = useNavigate();
+  const navegar = useNavigate();
 
   const handleClose = () => {
-    navigate(-1); 
+    navegar(-1); 
   };
 
   return (

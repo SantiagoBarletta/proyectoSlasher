@@ -2,24 +2,21 @@ import React from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './ChanelsHeader.css';
 import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
-import { LuClock3 } from "react-icons/lu";
 import { IoMdHelpCircleOutline } from "react-icons/io";
 import FormBusquedaMensajes from '../FormBusquedaMensajes/FormBusquedaMensajes';
 import { FaBars } from 'react-icons/fa';
 
 const ChanelsHeader = ({ search, setSearch, toggleAside }) => {
 
-  const navigate = useNavigate();
+  const navegar = useNavigate();
 
   const handleAtras = () => {
-    navigate(-1); 
+    navegar(-1); 
   };
 
   const handleAdelante = () => {
-    navigate(1); 
+    navegar(1); 
   };
-
-
 
   return (
     <div className='chanels-header'>

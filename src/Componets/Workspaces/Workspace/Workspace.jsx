@@ -6,7 +6,6 @@ import "./Workspace.css";
 function Workspace({ workspace }) {
   const { id, name, image, users, channels } = workspace;
 
-  // Verificar si channels está definido y tiene al menos un elemento
   const firstChannel =  channels[0];
 
   return (

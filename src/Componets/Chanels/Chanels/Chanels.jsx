@@ -13,8 +13,6 @@ const Chanels = ({ search, selectedUser, viewInfo, setViewInfo }) => {
   const [isLoading, setIsLoading] = useState(true);
   
 
-
-
   useEffect(() => {
     const storedWorkspaces = localStorage.getItem('workspaces');
 

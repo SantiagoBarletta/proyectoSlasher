@@ -39,7 +39,7 @@ function ChanelsScreens() {
             onSelectUser={setSelectedUser} 
             viewInfo={viewInfo} 
             setViewInfo={setViewInfo} 
-            onClose={closeAside} // Pasa la función closeAside
+            onClose={closeAside}
           />
         )}
         <Chanels search={search} selectedUser={selectedUser} viewInfo={viewInfo} setViewInfo={setViewInfo}/>

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { useParams, Link } from 'react-router-dom';
+import { useParams, Link, useNavigate } from 'react-router-dom';
 import './NewChannel.css';
 
 const NewChannel = () => {
@@ -13,9 +13,8 @@ const NewChannel = () => {
     if (channelName) {
       const storedWorkspaces = JSON.parse(localStorage.getItem('workspaces')) || [];
       const workspaceEncontrado = storedWorkspaces.find(ws => ws.id === workspaceID);
-      
+
       if (workspaceEncontrado) {
-        // Generar ID correlativo para el nuevo canal
         let highestChannelIdNumber = 0;
         workspaceEncontrado.channels.forEach(channel => {
           const channelIdNumber = parseInt(channel.id.substring(3));
@@ -26,19 +25,24 @@ const NewChannel = () => {
         const newChannelId = `C00${highestChannelIdNumber + 1}`;
         setNewChannelId(newChannelId);
 
-        // Crea nuevo canal
+
         const newChannel = {
           id: newChannelId,
           name: channelName,
           messages: []
         };
 
-        // Actualiza el workspace con el nuevo canal
         workspaceEncontrado.channels.push(newChannel);
         localStorage.setItem('workspaces', JSON.stringify(storedWorkspaces));
         setRedirect(true);
       }
     }
+  };
+
+  const navegar = useNavigate();
+
+  const handleAtras = () => {
+    navegar(-1);
   };
 
   useEffect(() => {
@@ -49,28 +53,28 @@ const NewChannel = () => {
 
   return (
     <div className='main-container-new-channel'>
-    <div className='new-channel-container'>
-      <form onSubmit={handleSubmit} className='form-new-channel'>
-        <div>
-          <label>Nombre del Canal:</label>
-          <input
-            type="text"
-            value={channelName}
-            onChange={(e) => setChannelName(e.target.value)}
-            required
-            placeholder='P.Ej.: General'
-            maxLength="20"
-          />
-        </div>
-        <p className='ayuda'>Los canales son el lugar donde se producen las conversaciones sobre un tema.
-          <br/>Usa un nombre que sea fácil de encontrar y comprender.</p>
-        <div className='botones'>
-          <button type="submit">Crear Canal</button>
-          <Link to={`/workspaces/${workspaceID}/C001`}>Cancelar</Link>
-        </div>
-      </form>
+      <div className='new-channel-container'>
+        <form onSubmit={handleSubmit} className='form-new-channel'>
+          <div>
+            <label>Nombre del Canal:</label>
+            <input
+              type="text"
+              value={channelName}
+              onChange={(e) => setChannelName(e.target.value)}
+              required
+              placeholder='P.Ej.: General'
+              maxLength="20"
+            />
+          </div>
+          <p className='ayuda'>Los canales son el lugar donde se producen las conversaciones sobre un tema.
+            <br />Usa un nombre que sea fácil de encontrar y comprender.</p>
+          <div className='botones'>
+            <button type="submit">Crear Canal</button>
+            <Link onClick={handleAtras}>Cancelar</Link>
+          </div>
+        </form>
+      </div>
     </div>
-  </div>
   );
 };
 
